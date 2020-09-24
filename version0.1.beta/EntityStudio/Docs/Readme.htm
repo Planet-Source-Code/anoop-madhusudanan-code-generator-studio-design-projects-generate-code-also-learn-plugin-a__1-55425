@@ -1,0 +1,192 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Smart Code Engine: Readme</title>
+
+
+</head>
+<body>
+
+<h2><font face="verdana,arial">Entity Studio 0.1 Beta Readme</font></h2>
+<hr>
+<h4><b><font color="#FF0000" face="verdana,arial" size="1">*** Generate Code !! Fast And How!!
+***</font></b></h4>
+<p><font face="verdana,arial" size="2"><b>By Anoop Madhusudanan</b></font></p>
+<ul>
+  <li><font face="verdana,arial" size="2"><a href="http://www.logicmatrixonline.com/anoop">Visit My Homepage & Get More Source Code</a></font></li>
+</ul>
+<hr>
+<h3><b><a name="Contents"><font color="#000080" face="verdana,arial">Contents</font></a></b></h3>
+<ul>
+  <li><a href="license.htm"><font color="#0000FF" face="verdana,arial" size="2">License</font></a></li>
+  <li><a href="#A. About The Project"><font size="2" face="verdana,arial" color="#0000FF">Breif
+    Overview</font></a></li>
+  <li><a href="#B. Quick Start"><b><font color="#FF0000" face="verdana,arial" size="2"> QuickStart</font></b></a></li>
+  <li><a href="#C. Schema Control"><font size="2" face="verdana,arial" color="#0000FF">Schema
+    Control</font></a></li>
+  <li><a href="#D. SchemaModel"><font size="2" face="verdana,arial" color="#0000FF">Schema
+    Model</font></a></li>
+</ul>
+<h3><b><a name="Contents"><font color="#000080" face="verdana,arial">Related</font></a></b></h3>
+<ul>
+  <li><a href="#ASP PRojects"><font size="2" face="verdana,arial" color="#0000FF">Creating
+    ASP Projects</font></a></li>
+</ul>
+<h3><b><a name="License"><font color="#000080" face="verdana,arial">License</font></a></b></h3>
+<p><font face="verdana,arial" size="2">This project comes with GNU GENERAL PUBLIC LICENSE. See <a href="license.htm"> License.htm</a>
+. Provide credits whereever applicable.</font></p>
+<h3>&nbsp;</h3>
+<h3><b><font color="#000080" face="verdana,arial">A. </font><a name="A. About The Project"><font color="#000080" face="verdana,arial">Brief
+Overview</font></a></b></h3>
+<hr>
+<p><font face="verdana,arial" size="2">The general design goal is to create
+a&nbsp; project which can design entity relationship diagrams, to generate
+database and program code out of it. ER diagrams can be imported from databases
+and existing program code (classes). An Entity relationship diagram is something
+like a relationship diagram you see in Microsoft Access. This project provides a
+small environment to work with ER diagrams, an XML language and its DOM to
+describe these ER diagrams, and a control that can be used to visually represent
+these ER Diagrams.</font></p>
+<p><font size="2" face="verdana,arial">Presently, it can&nbsp;</font></p>
+<ul>
+  <li><font size="2" face="verdana,arial">Import ER diagrams from Access 97
+    database (using DAO)</font></li>
+  <li><font size="2" face="verdana,arial">Export code to ASP (with relational
+    lookup combos for implementing relations).</font></li>
+</ul>
+<p><font size="2" face="verdana,arial">I am working on a plugin interface. So,
+by next release, you can write your own plugins to import and export
+diagram/code from a variety of platforms.</font></p>
+<p><font face="verdana,arial" size="2"><b>The whole project group consists of three
+major projects.</b></font></p>
+<p><b><font face="verdana,arial" size="2">Entity Studio</font></b></p>
+<ul>
+  <li><font face="verdana,arial" size="2">Importing entity relationship diagrams (like relationship
+    diagrams you see in Microsoft Access).</font></li>
+  <li><font face="verdana,arial" size="2">Allow modification of each entity and relation in the diagram</font></li>
+  <li><font face="verdana,arial" size="2">Save entity diagrams as XML schemas</font></li>
+  <li><font face="verdana,arial" size="2">Allow Code generation from entity schemas</font></li>
+</ul>
+<p><b><font face="verdana,arial" size="2">Entity Designer Schema Control</font></b></p>
+<ul>
+  <li><font face="verdana,arial" size="2">Design entity relationship diagrams</font></li>
+  <li><font face="verdana,arial" size="2">Dump this schema to an XML file</font></li>
+  <li><font face="verdana,arial" size="2">Load this schema back from an XML file</font></li>
+</ul>
+<p><b><font face="verdana,arial" size="2">Schema Model ActiveX Library</font></b></p>
+<ul>
+  <li><font face="verdana,arial" size="2">It proives a Document Object Model for the Entity Relationship Definition
+    language (an XML language) to describe enity schemas.</font></li>
+</ul>
+<p><b><font face="verdana,arial" size="2">Plugin Projects</font></b></p>
+<ul>
+  <li><font face="verdana,arial" size="2">All projects that start with the name <i>Plug</i>
+    is a plugin project. To enable Entity Studio to load these projects, create
+    a file with a <i>map </i>extension - that is, if you need Entity Studio to
+    load <b>PlugExportASP </b>plugin, create a file named <i><b>PlugExportASP.map
+    </b></i>in the <i>&lt;entitystudiofolder&gt;\Export </i>folder. Otherwise,
+    you can put a registered dll file in the folder too (like
+    PlugExportASP.dll). But using a map file will help you to load plugins
+    before compiling them.</font></li>
+</ul>
+<p align="right"><a href="#Contents"><font face="verdana,arial" size="2">Top ^</font></a></p>
+<h3><b><a name="B. Quick Start"><font color="#000080" face="verdana,arial">B. Quick Start</font></a></b></h3>
+<hr>
+<p><font face="verdana,arial" size="2">Follow the below steps to get a better picture.</font></p>
+<ol>
+  <li><font face="verdana,arial" size="2">Open Schema.vbg in Visual Basic</font></li>
+  <li><font face="verdana,arial" size="2">Select <i><font color="#FF0000">File-&gt;Import
+    From-&gt; Access 97 Database</font></i>. In the Open DAO dialog box, select
+    an Access 97 database. For example, open
+    the Nwind.mdb in your Visual Basic folder.&nbsp; The database will be
+    imported, and now you should see the Entity diagram of this database.</font>
+    <ul>
+      <li><font face="verdana,arial" size="2">(<b>Important:</b> You can import only Access 97 format databases. If
+        you are using MS Access 2000 or later, use Microsoft Access to open the
+        database you need to import, and select <i><font color="#FF0000">Tools-&gt;Database
+        Utilities-&gt;Convert Database -&gt;To Prior Database Version</font>  </i>in
+        Access, and
+        import the converted database)</font></li>
+    </ul>
+  </li>
+  <li><font face="verdana,arial" size="2">Once you have your entity diagram, You can double click almost any field in an entity, to edit it's
+    properties in the schema. (Remember, we are still at beta stage, so some
+    limitations apply)</font></li>
+  <li><font face="verdana,arial" size="2">Click <i><font color="#FF0000">File-&gt;Export
+    To-&gt;Active Server Pages</font> </i> to bring up the Generate ASP Code
+    dialog box</font></li>
+  <li><font face="verdana,arial" size="2">Type the name and the
+    path. The path should be your IIS website root location (eg: <b>c:\inetpub\wwwroot</b>)
+    and the name can be any valid folder name (say <b>nwind</b>). Click OK</font></li>
+  <li><font face="verdana,arial" size="2">After the project creation is complete, try it in your browser . eg:
+    <font color="#FF0000"><a href="http://localhost/nwind">
+    http://localhost/nwind</a>. </font>Ofcourse, you need Internet Information
+    Server installed to interpret these
+    ASP files.</font>
+  </li>
+  <li><font face="verdana,arial" size="2">Click <i><font color="#FF0000">File-&gt;Save Schema</font></i> 
+    (optional) if you need to save the schema to an XML file, for opening it
+    later.</font></li>
+</ol>
+    <p align="right"><a href="#Contents"><font face="verdana,arial" size="2">Top ^</font></a>
+<h3><b><a name="C. Schema Control"><font color="#000080" face="verdana,arial">C. Schema
+Control</font></a></b></h3>
+<hr>
+<p><font size="2" face="verdana,arial">Important functions include</font></p>
+<ul>
+  <li><font face="verdana,arial" size="2"><b>LoadSchemaFromFile(Filename)</b>&nbsp; -
+    Use LoadSchemaFromFile method to load a valid xml file to the schema</font></li>
+  <li><font face="verdana,arial" size="2"><b>DumpSchema()</b> - Will return the
+    XML schema dump, so that you can save it to a file.</font></li>
+</ul>
+<h3>&nbsp;</h3>
+<h3><b><a name="D. SchemaModel"><font color="#000080" face="verdana,arial">D. Schema
+Model (ER DOM)</font></a></b></h3>
+<hr>
+<p><font size="2" face="verdana,arial">This Entity Relationship DOM will be used
+in future by import and export plugins, to import and export ER information
+from/to the system.&nbsp;</font></p>
+<p><font size="2" face="verdana,arial">This DOM is now capable of</font></p>
+<ul>
+  <li><font size="2" face="verdana,arial">Load a valid XML schema file&nbsp;</font></li>
+  <li><font size="2" face="verdana,arial">Save itself to a file</font></li>
+</ul>
+<p><font size="2" face="verdana,arial">If you are interested, carefully study the
+IterateAll function in SchemaModelTest project (Make it the startup project and
+then run). This way, you can get some light towards importing ER information to
+the schema, and exporting it to the code.</font></p>
+<p>&nbsp;</p>
+<h3><b><a name="ASP PRojects"><font face="verdana,arial" color="#FF9933">Creating
+ASP Projects</font></a></b></h3>
+<hr>
+<p><font size="2" face="verdana,arial">You can customize the files in <i>&lt;entitystudiofolder&gt;\Export\ASP</i>
+folder, to customize the style, appearence and control
+code of the asp projects.</font></p>
+<p><font size="2" face="verdana,arial"><b>Important: </b>You can find some
+schemas in the Entity Studio Schemas folder. You can view them, but after
+creating ASP code from them, they asp site won't work because the actual databases are
+not included.&nbsp;</font></p>
+<p><font size="2" face="verdana,arial">At a later stage, Entity Studio may
+support generating databases from these schemas too :).</font></p>
+<p><font size="2" face="verdana,arial">Now, you can use your own databases to create schemas and generate
+code from them, as explained in the above quick start.</font></p>
+<p>&nbsp;</p>
+<h3><b><font face="verdana,arial">By An 'oop' Madhusudanan</font> </b></h3>
+<h3><b> <a href="http://www.logicmatrixonline.com/anoop"><font face="verdana,arial">http://www.logicmatrixonline.com/anoop</font></a>
+</b></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

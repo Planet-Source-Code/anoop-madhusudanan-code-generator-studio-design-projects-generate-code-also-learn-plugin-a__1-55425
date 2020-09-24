@@ -1,0 +1,8 @@
+VBGROUP 5.0
+Project=SchemaControl\Schema.vbp
+StartupProject=EntityStudio\EntityStudio.vbp
+Project=SchemaModel\SchemaModel.vbp
+Project=SchemaModel\Testproject\TestSchema.vbp
+Project=PluginProjects\Import\ADO\ADOImport.vbp
+Project=PluginProjects\Export\ASP\ASPExport.vbp
+Project=PluginProjects\Import\Dao\DAOImport.vbp
