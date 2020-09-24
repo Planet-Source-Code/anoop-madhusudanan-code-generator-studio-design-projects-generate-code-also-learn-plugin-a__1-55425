@@ -1,0 +1,32 @@
+
+Directives In Template File
+------------------------------
+
+$TITLE
+$SUBTITLE
+
+$NAVBAR
+$SUBNAVBAR
+$PANE
+
+$CONTENT
+$COPYRIGHT
+
+
+Directives In Core File
+------------------------------
+
+Directives:
+
+$HTML
+$HEADER_GLOBAL
+$HEADER_LOCAL
+$HEADER_VARIABLES
+
+Variables:
+
+VAR_TITLE
+VAR_CONSTRING
+VAR_SUBTITLE
+VAR_NAVBAR
+VAR_SUBNAVBAR

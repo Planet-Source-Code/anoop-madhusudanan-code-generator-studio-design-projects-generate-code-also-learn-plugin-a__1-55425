@@ -1,0 +1,11 @@
+Field#Primary#True|False#Whether this field is a primary key
+Field#Display#True|False#Display this field or no
+Field#Required#True|False#Required or not
+Field#AllowZeroLength#True|False#Allow Zero Length or not
+Field#Type#Text|Relation|Memo|Hyperlink|Number|AutoNumber|DateTime|Currency|YesNo|OLE # Data Type of this field
+Relation#Table#:listentities
+Relation#Field#:listfields
+Relation#ForeignTable#:listentities
+Relation#ForeignField#:listfields
+Relation#DisplayField#:listfields
+Relation#Type#1|0# 1 For 
